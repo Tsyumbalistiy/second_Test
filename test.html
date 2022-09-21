@@ -6,11 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
-    <title>Document</title>
+    <title>Card pizza</title>
 </head>
 
 <body>
+    <div class="card">
+        <div class="card__image_container">
+            <img src="./img/image 3.png" alt="" class="card__image">
+            <div class="cover"></div>
+        </div>
+        <div class="card__container">
+            <h3 class="card__title">
+                Margherita Pizza
+            </h3>
+            <p class="card__subtitle_title">
+                Made with San Marzano tomatoes, mozzarella cheese, and fresh basil.
+            </p>
+            <h4 class="card__price">
+                $35.00
+            </h4>
 
+            <form action="#" class="card__action_page">
+                <div class="card__select_container">
+                    <select id="country" name="#" class="card__select">
+                        <option value="regular">Regular</option>
+                        <option value="small">Small</option>
+                        <option value="average">Average</option>
+                        <option value="big">Big</option>
+                    </select>
+                </div>
+
+                <button class="card__button">ADD TO CART</button>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
