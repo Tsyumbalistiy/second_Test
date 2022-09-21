@@ -1,86 +1,109 @@
-        @import url(https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300italic,regular,600,600italic,);
-        body {
-            margin: 0;
-            box-sizing: border-box;
-            display: flex;
-        }
-        
-        .triangle_conteiner {
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .cover {
-            position: absolute;
-            top: 136px;
-            right: -146px;
-            width: 450px;
-            height: 300px;
-            background-color: #fff;
-            transform: rotate(-27deg);
-        }
-        
-        .wrapper {
-            margin: 50px;
-            width: 290px;
-            height: 570px;
-            border-radius: 25px;
-            background: #FFFFFF;
-            border: 1px solid #BDBDBD;
-            overflow: hidden;
-        }
-        
-        .made {
-            font-family: 'Fira Sans';
-            font-style: normal;
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 18px;
-            color: #333333;
-        }
-        
-        .card_container {
-            padding: 0 23.5px 24px;
-            text-align: center;
-            font-family: 'Fira Sans';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 24px;
-            line-height: 32px;
-        }
-        
-        .regular {
-            box-sizing: border-box;
-            display: flex;
-            flex-direction: row;
-            color: #333333;
-            padding: 9px 16px;
-            gap: 27px;
-            width: 243px;
-            height: 40px;
-            border: 1px solid #4F4F4F;
-            border-radius: 25px;
-            margin: 0 0 10px;
-            cursor: pointer;
-        }
-        
-        .Cart {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            color: #FFFFFF;
-            padding: 10px 24px 11px;
-            gap: 10px;
-            width: 243px;
-            height: 40px;
-            background: #F44A25;
-            border-radius: 25px;
-            font-family: 'Fira Sans';
-            font-style: normal;
-            cursor: pointer;
-        }
-        
-        .image {
-            animation-fill-mode: both;
-        }
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300italic,regular,600,600italic,);
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.triangle__conteiner {
+    position: relative;
+    overflow: hidden;
+}
+
+.cover {
+    position: absolute;
+    top: 136px;
+    right: -146px;
+    width: 450px;
+    height: 300px;
+    background-color: #fff;
+    transform: rotate(-27deg);
+}
+
+.title {
+    margin-bottom: 4px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+}
+
+.subtitle__title {
+    margin: 0 0 21px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 300;
+}
+
+.price {
+    margin: 21px 0;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+}
+
+.wrapper {
+    margin: 50px;
+    width: 290px;
+    height: 530px;
+    border-radius: 25px;
+    background: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    overflow: hidden;
+}
+
+.card__container {
+    padding: 0 23.5px 24px;
+    text-align: center;
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.action__page {
+    display: flex;
+}
+
+.Cart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    padding: 10px 24px 11px;
+    gap: 10px;
+    width: 243px;
+    height: 40px;
+    background: #F44A25;
+    border-radius: 25px;
+    font-family: 'Fira Sans';
+    font-style: normal;
+    border: none;
+}
+
+.Cart:hover {
+    transition: width 2s, height 4s;
+    color: #333333;
+}
+
+.action__page {
+    display: flex;
+    flex-direction: column;
+}
+
+.select {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 9px 16px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    background-image: url(../img/Vector.svg);
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    appearance: none;
+}
+
+.select__wrapper {
+    position: relative;
+}
